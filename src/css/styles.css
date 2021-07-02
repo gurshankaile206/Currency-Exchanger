@@ -10,6 +10,26 @@ body {
   padding: 20px;
 }
 
+h1 {
+  color: antiquewhite;
+}
+
+p {
+  text-align: center;
+}
+
+.btn {
+  color: antiquewhite;
+  background-color: antiquewhite;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 12px;
+  padding: 5px 12px;
+}
 * {
   box-sizing: border-box;
+}
+
+.container { 
+  text-align: center;
 }
