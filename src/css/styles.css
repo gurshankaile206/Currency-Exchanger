@@ -1,5 +1,5 @@
 body {
-  background-color: lightblue;
+  background-color: green;
   font-family: 'Courier New', Courier, monospace;
   display: flex;
   flex-direction: column;
@@ -11,20 +11,24 @@ body {
 }
 
 h1 {
-  color: antiquewhite;
+  color: yellow;
 }
 
 p {
   text-align: center;
+  font-size: 20px;
 }
 
 .btn {
-  color: antiquewhite;
-  background-color: antiquewhite;
+  color: e;
+  background-color: yellow;
   cursor: pointer;
   border-radius: 5px;
   font-size: 12px;
-  padding: 5px 12px;
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  
 }
 * {
   box-sizing: border-box;
