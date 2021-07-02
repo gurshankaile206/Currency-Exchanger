@@ -1,24 +1,21 @@
-const currencyElOne = document.getElementById('currency-one');
-const currencyElTwo = document.getElementById('currency-two');
-const amountElOne = document.getElementById('amount-one');
-const amountElTwo = document.getElementById('amount-two');
+export default class CurrencyService{
+    
+constructor(){}
 
-const rateEl = document.getElementById('rate');
-const swap = document.getElementById('swap');
-
-
-
-
-
-
-currencyElOne.addEventListener('change', calculate);
-currencyElTwo.addEventListener('change', calculate);
-amountElOne.addEventListener('input', calculate);
-amountElTwo.addEventListener('input', calculate);
-
-
-
-
-
+static async getCurrency() {
+    try {
+        let response = await fetch(`https://v6.exchangerate-api.com/v6/ae9d09d8f8c52a211e3b3669/latest/USD`);
+        let jsonifiedResponse;
+        if (response.ok && response.status == 200) {
+            jsonifiedResponse = await response.json();
+        } else {
+            jsonifiedResponse = false; 
+        }
+        return jsonifiedResponse;
+    } catch(error) {
+        return false; 
+    }
+    }
+}
 
 
