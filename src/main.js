@@ -6,5 +6,9 @@ import CurrencyService  from './Currency';
 
 const call = async() => {
   let c1 = document.getElementById('currency-one').value; 
+  let c2 = document.getElementById('currency-two').value;
+  let p1 = document.getElementById('amount-one').value;
+  let p2 = document.getElementById('amount-two').value;
   
+
 }
