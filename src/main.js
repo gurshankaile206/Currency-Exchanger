@@ -15,7 +15,7 @@ const call = async() => {
   
   a1 = parseInt(a1);  
   if(!Number.isNaN(a1)) {
-  document.getElementById('amount-two').value = a1 * value.toFixed(2);
+    document.getElementById('amount-two').value = a1 * value.toFixed(2);
   }
   
 };
