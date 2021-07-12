@@ -1,6 +1,6 @@
 # Currency Exchange 
 
-Welcome to CurrencyExchange
+Welcome to Currency Exchange
 
 ## Description 
 
