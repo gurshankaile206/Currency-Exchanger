@@ -1,14 +1,10 @@
-import $ from 'jquery';
+// import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
-import { CurrencyService } from './../Currency';
+import CurrencyService  from './Currency';
 
-$(document).ready(function() {
-    
-})
-
-
-
-
-
+const call = async() => {
+  let c1 = document.getElementById('currency-one').value; 
+  
+}
