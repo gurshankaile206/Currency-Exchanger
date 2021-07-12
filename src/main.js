@@ -11,11 +11,12 @@ const call = async() => {
   let a2 = document.getElementById('amount-two').value;
   let api = await CurrencyService.getCurrency(c1);
 
-  let value = api.conversion_rates[c2] 
+  let value = api.conversion_rates[c2]; 
   
-  a1 = parseInt(a1)  
+  a1 = parseInt(a1);  
   if(!Number.isNaN(a1)) {
-    document.getElementById('amount-two').value = a1 * value 
+    document.getElementById('amount-two').value = a1 * value;
   }
-
-}
+  
+};
+document.getElementById('swap').addEventListener('click', call);
