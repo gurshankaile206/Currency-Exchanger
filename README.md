@@ -14,7 +14,7 @@ The __Currency Exchange__ application is able to display currency conversions fo
 * Open cloned project file in text editor
 * Run ```npm install``` to install required packages
 * Retrieve your own API Key
-  * Visit https://app.exchangerate-api.com/sign-in/exists
+  * Visit https://www.exchangerate-api.com/
   * Click sign up 
   * Enter email and create password
   * Retrieve a free key

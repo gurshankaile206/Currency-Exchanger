@@ -1,6 +1,6 @@
 export default class CurrencyService{
     
-constructor(){}
+
 
 static async getCurrency(currency) {
     try {
