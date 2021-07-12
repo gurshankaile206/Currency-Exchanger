@@ -11,6 +11,6 @@ const call = async() => {
   let p2 = document.getElementById('amount-two').value;
   let api = await CurrencyService.getCurrency(c1);
 
-  
+  let value = api.conversion_rates[c2]
 
 }
