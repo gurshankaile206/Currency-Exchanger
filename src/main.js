@@ -9,6 +9,8 @@ const call = async() => {
   let c2 = document.getElementById('currency-two').value;
   let p1 = document.getElementById('amount-one').value;
   let p2 = document.getElementById('amount-two').value;
+  let api = await CurrencyService.getCurrency(c1);
+
   
 
 }
