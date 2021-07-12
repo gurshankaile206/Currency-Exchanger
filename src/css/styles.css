@@ -20,14 +20,15 @@ p {
 }
 
 .btn {
-  color: e;
-  background-color: yellow;
+  color: white;
+  background-color: palegoldenrod;
   cursor: pointer;
-  border-radius: 5px;
-  font-size: 12px;
+  border-radius: 10px;
+  font-size: 15px;
   padding: 5px;
   margin-top: 10px;
   margin-bottom: 10px;
+  margin-left: 60px;
   
 }
 * {
