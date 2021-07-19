@@ -8,10 +8,11 @@ export default class CurrencyService{
         jsonifiedResponse = await response.json();
       } else {
         jsonifiedResponse = false; 
+        throw new Error("Whoops!")
       }
       return jsonifiedResponse;
-    } catch(error) {
-      return false; 
+    } catch(Error) {
+      console.error(  "Not a valid Currency" ); 
     }
   }
 }
