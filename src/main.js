@@ -1,4 +1,4 @@
-//import $ from 'jquery';
+import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
@@ -10,13 +10,19 @@ const call = async() => {
   let a1 = document.getElementById('amount-one').value;
   let a2 = document.getElementById('amount-two').value;
   let api = await CurrencyService.getCurrency(c1);
-
+if(!api.error){
   let value = api.conversion_rates[c2]; 
   
   a1 = parseInt(a1);  
   if(!Number.isNaN(a1)) {
     document.getElementById('amount-two').value = a1 * value.toFixed(2);
-  }
+  } 
+}else{
+  document.getElementsByClassName('output')[0].innerHTML=api.message+'!!!!'
+  setTimeout(() => {
+    document.getElementsByClassName('output')[0].innerHTML=''
+  }, 3000);
   
-};
+}
+}
 document.getElementById('swap').addEventListener('click', call);

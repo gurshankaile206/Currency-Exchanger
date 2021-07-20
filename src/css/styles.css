@@ -38,3 +38,8 @@ p {
 .container { 
   text-align: center;
 }
+
+.output {
+  color: red;
+  font-size: 30px;
+}
