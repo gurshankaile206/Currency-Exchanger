@@ -12,7 +12,7 @@ export default class CurrencyService{
       }
       return jsonifiedResponse;
     } catch(Error) {
-      console.error(  "Not a valid Currency" ); 
+      alert("Not a valid Currency");
     }
   }
 }
